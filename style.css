@@ -1,0 +1,631 @@
+﻿
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5fa;
+    color: #38383d;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ebebf0;
+    padding: 12px 0 8px 0;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-text {
+    color: #0b74e5;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.logo-sub {
+    color: #1a94ff;
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.search-area {
+    flex: 1;
+    max-width: 650px;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .search-box i {
+        padding: 10px 12px;
+        color: #808089;
+        background: #fff;
+    }
+
+    .search-box input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 8px 0;
+        font-size: 13px;
+    }
+
+    .search-box button {
+        background: #0b74e5;
+        color: #fff;
+        border: none;
+        padding: 0 20px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+.quick-keywords {
+    display: flex;
+    gap: 12px;
+    margin-top: 6px;
+    color: #808089;
+    font-size: 11px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.action-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #27272a;
+}
+
+    .action-item i {
+        font-size: 18px;
+        color: #0b74e5;
+    }
+
+.header-commitments {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #f2f2f2;
+    font-size: 12px;
+    color: #27272a;
+}
+
+.commitment-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+    .commitment-item i {
+        color: #0b74e5;
+    }
+
+.delivery-address {
+    margin-left: auto;
+    color: #808089;
+    font-size: 12px;
+}
+
+    .delivery-address span {
+        color: #27272a;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+.breadcrumb {
+    padding: 12px 0;
+    color: #808089;
+    font-size: 12px;
+}
+
+    .breadcrumb span {
+        color: #27272a;
+    }
+
+.main-content {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.sidebar {
+    width: 230px;
+    flex-shrink: 0;
+}
+
+.side-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.side-title {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #27272a;
+}
+
+.category-list {
+    list-style: none;
+}
+
+    .category-list li {
+        padding: 6px 0;
+        font-size: 12px;
+        color: #38383d;
+        cursor: pointer;
+    }
+
+        .category-list li:hover {
+            color: #0b74e5;
+        }
+
+.side-prod-item {
+    border: 1px solid #ebebf0;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.side-prod-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto 8px auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.side-badge {
+    font-size: 10px;
+    color: #808089;
+    margin-bottom: 4px;
+}
+
+.side-prod-name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.side-prod-price {
+    color: #ff424e;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.btn-viewmore {
+    display: block;
+    width: 100%;
+    background: #0b74e5;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content-body {
+    flex: 1;
+}
+
+.page-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #27272a;
+}
+
+.banner-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.banner-card {
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    color: #fff;
+    min-height: 120px;
+}
+
+.banner-apple {
+    background: linear-gradient(135deg, #2b2e35, #111315);
+    justify-content: space-between;
+}
+
+.banner-promo {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    justify-content: space-between;
+}
+
+.banner-text h4 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.banner-text p {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.subcat-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 16px;
+}
+
+.subcat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.subcat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.subcat-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #f0f4fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #0b74e5;
+    margin-bottom: 6px;
+}
+
+.subcat-name {
+    font-size: 12px;
+    color: #27272a;
+}
+
+.filter-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 16px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.filter-label {
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 80px;
+    color: #808089;
+}
+
+.tag-btn {
+    background: #f5f5fa;
+    border: 1px solid #ebebf0;
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #38383d;
+}
+
+    .tag-btn.active {
+        border-color: #0b74e5;
+        color: #0b74e5;
+        background: #eef6fd;
+    }
+
+.filter-tags-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #f2f2f2;
+    flex-wrap: wrap;
+}
+
+.badge-tag {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.badge-now {
+    background: #ff424e;
+    color: #fff;
+}
+
+.badge-deal {
+    background: #ffeed8;
+    color: #c95100;
+}
+
+.badge-ship {
+    background: #e5f7ed;
+    color: #00ab56;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid #ebebf0;
+}
+
+    .product-card:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+.prod-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.prod-brand {
+    font-size: 10px;
+    font-weight: 700;
+    color: #808089;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.prod-title {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #27272a;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 36px;
+}
+
+.rating-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    color: #808089;
+    margin-bottom: 6px;
+}
+
+.stars {
+    color: #fbc02d;
+    font-size: 10px;
+}
+
+.prod-options {
+    font-size: 11px;
+    color: #808089;
+    margin-bottom: 8px;
+}
+
+.prod-price-area {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.current-price {
+    color: #ff424e;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.discount-rate {
+    background: #fff0f1;
+    color: #ff424e;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 1px 4px;
+    border-radius: 2px;
+}
+
+.prod-footer-tag {
+    font-size: 10px;
+    color: #ff424e;
+    font-weight: 600;
+    border-top: 1px dashed #ebebf0;
+    padding-top: 6px;
+    margin-top: auto;
+}
+
+.subcat-thumb {
+    width: 60px;
+    height: 60px;
+    background-color: #f7f9fa;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+    .subcat-thumb img {
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+
+.subcat-item:hover .subcat-thumb {
+    transform: translateY(-2px);
+}
+/* Layout 2 banner song song */
+.banner-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+/* Khung bọc chung cho mỗi banner */
+.banner-box {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* --- BANNER TRÁI (APPLE) --- */
+.banner-apple {
+    padding: 12px 14px;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Khung logo Apple Authorized Reseller */
+.apple-reseller {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid #ebebf0;
+    border-radius: 6px;
+    padding: 6px 8px;
+    background: #fafafa;
+    flex-shrink: 0;
+}
+
+    .apple-reseller i {
+        font-size: 26px;
+        color: #000;
+    }
+
+    .apple-reseller span {
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 1.1;
+        color: #27272a;
+        text-transform: uppercase;
+    }
+
+
+.apple-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.apple-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #27272a;
+    line-height: 1.2;
+}
+
+.apple-sub {
+    font-size: 11px;
+    color: #808089;
+    margin-top: 2px;
+}
+
+.apple-img-thumb {
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #000;
+}
+
+    .apple-img-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* --- BANNER PHẢI (ẢNH NGUYÊN KHỐI) --- */
+.banner-promo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
